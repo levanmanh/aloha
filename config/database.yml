@@ -16,8 +16,13 @@ default: &default
   username: root
   password:
   socket: /tmp/mysql.sock
+  # socket: /var/run/mysqld/mysqld.sock
 
 development:
+  <<: *default
+  database: aloha_development
+
+production:
   <<: *default
   database: aloha_development
 
