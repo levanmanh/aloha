@@ -11,7 +11,7 @@ set :stage, :development
 set :rails_env, :development
 set :deploy_to, "/deploy/apps/aloha"
 set :branch, :master
-server "13.114.21.137", user: "manhlv", roles: %w(web app db)
+server "13.231.173.115", user: "aloha", roles: %w(web app db)
 
 # role-based syntax
 # ==================
